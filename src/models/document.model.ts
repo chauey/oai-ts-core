@@ -32,9 +32,9 @@ export abstract class OasDocument extends OasExtensibleNode {
 
     public info: OasInfo;
     public paths: OasPaths;
-    public security: OasSecurityRequirement[];
-    public tags: OasTag[];
-    public externalDocs: OasExternalDocumentation;
+    public security?: OasSecurityRequirement[];
+    public tags?: OasTag[];
+    public externalDocs?: OasExternalDocumentation;
 
     /**
      * Returns the version of the specification of this document.

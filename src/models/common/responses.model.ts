@@ -28,7 +28,7 @@ export abstract class OasResponses extends OasExtensibleNode implements IOasInde
 
     __instanceof_IOasIndexedNode: boolean = true;
 
-    public default: OasResponse;
+    public default?: OasResponse;
     private _responses: OasResponseItems;
 
     /**

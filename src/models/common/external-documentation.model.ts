@@ -23,7 +23,7 @@ import {OasExtensibleNode} from "../enode.model";
  */
 export class OasExternalDocumentation extends OasExtensibleNode {
 
-    public description: string;
+    public description?: string;
     public url: string;
 
     /**

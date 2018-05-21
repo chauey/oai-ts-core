@@ -32,10 +32,10 @@ export class Oas30Example extends OasExtensibleNode {
     private _name: string;
 
     public $ref: string;
-    public summary: string;
-    public description: string;
-    public value: any;
-    public externalValue: string;
+    public summary?: string;
+    public description?: string;
+    public value?: any;
+    public externalValue?: string;
 
     /**
      * Constructor.

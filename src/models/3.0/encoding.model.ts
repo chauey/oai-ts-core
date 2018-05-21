@@ -25,11 +25,11 @@ import {Oas30Header} from "./header.model";
 export class Oas30Encoding extends OasExtensibleNode {
 
     private _name: string;
-    public contentType: string;
-    public headers: Oas30EncodingHeaders = new Oas30EncodingHeaders();
-    public style: string;
-    public explode: boolean;
-    public allowReserved: boolean;
+    public contentType?: string;
+    public headers?: Oas30EncodingHeaders = new Oas30EncodingHeaders();
+    public style?: string | 'form' | 'spaceDelimited' | 'pipeDelimited' | 'deepObject';
+    public explode?: boolean;
+    public allowReserved?: boolean;
 
     /**
      * Constructor.

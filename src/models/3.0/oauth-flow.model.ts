@@ -25,8 +25,8 @@ export abstract class Oas30OAuthFlow extends OasExtensibleNode {
 
     public authorizationUrl: string;
     public tokenUrl: string;
-    public refreshUrl: string;
-    public scopes: any;
+    public refreshUrl?: string;
+    public scopes?: any;
 
     public addScope(scope: string, description: string): void {
         if (!this.scopes) {

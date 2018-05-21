@@ -24,7 +24,7 @@ import {OasExtensibleNode} from "../enode.model";
 export class OasLicense extends OasExtensibleNode {
 
     public name: string;
-    public url: string;
+    public url?: string;
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

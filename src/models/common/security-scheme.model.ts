@@ -23,10 +23,10 @@ import {OasExtensibleNode} from "../enode.model";
  */
 export class OasSecurityScheme extends OasExtensibleNode {
 
-    private _schemeName: string;
+    private _schemeName: string | 'bearer';
 
-    public type: string;
-    public description: string;
+    public type: string | 'apiKey' | 'http' | 'oauth2' | 'openIdConnect';
+    public description?: string;
     public name: string;
     public in: string;
 
@@ -34,7 +34,7 @@ export class OasSecurityScheme extends OasExtensibleNode {
      * Must construct this with a name.
      * @param name
      */
-    constructor(name: string) {
+    constructor(name: string | 'bearer') {
         super();
         this._schemeName = name;
     }
@@ -43,7 +43,7 @@ export class OasSecurityScheme extends OasExtensibleNode {
      * Returns the name of the scheme.
      * @return {string}
      */
-    public schemeName(): string {
+    public schemeName(): string | 'bearer' {
         return this._schemeName;
     }
 

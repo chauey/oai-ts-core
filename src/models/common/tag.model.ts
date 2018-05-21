@@ -25,8 +25,8 @@ import {OasExternalDocumentation} from "./external-documentation.model";
 export abstract class OasTag extends OasExtensibleNode {
 
     public name: string;
-    public description: string;
-    public externalDocs: OasExternalDocumentation;
+    public description?: string;
+    public externalDocs?: OasExternalDocumentation;
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

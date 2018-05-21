@@ -51,14 +51,16 @@ import {Oas30ServerVariable} from "./server-variable.model";
 export class Oas30Discriminator extends OasExtensibleNode {
 
     public propertyName: string;
-    public mapping: any;
+    public mapping?: {
+        [k: string]: string;
+    };
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.
      * @param visitor
      */
     public accept(visitor: IOasNodeVisitor): void {
-        let viz: IOas30NodeVisitor = <IOas30NodeVisitor> visitor;
+        let viz: IOas30NodeVisitor = <IOas30NodeVisitor>visitor;
         viz.visitDiscriminator(this);
     }
 

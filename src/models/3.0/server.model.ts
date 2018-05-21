@@ -46,8 +46,8 @@ import {Oas30ServerVariable} from "./server-variable.model";
 export class Oas30Server extends OasExtensibleNode {
 
     public url: string;
-    public description: string;
-    public variables: Oas30ServerVariables = new Oas30ServerVariables();
+    public description?: string;
+    public variables?: Oas30ServerVariables = new Oas30ServerVariables();
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

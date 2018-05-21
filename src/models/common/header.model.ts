@@ -24,7 +24,7 @@ import {OasExtensibleNode} from "../enode.model";
 export class OasHeader extends OasExtensibleNode {
 
     private _headerName: string;
-    public description: string;
+    public description?: string;
 
     /**
      * Constructor.

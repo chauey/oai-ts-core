@@ -26,10 +26,10 @@ import {OasContact} from "./contact.model";
 export abstract class OasInfo extends OasExtensibleNode {
 
     public title: string;
-    public description: string;
-    public termsOfService: string;
-    public contact: OasContact;
-    public license: OasLicense;
+    public description?: string;
+    public termsOfService?: string;
+    public contact?: OasContact;
+    public license?: OasLicense;
     public version: string;
 
     /**

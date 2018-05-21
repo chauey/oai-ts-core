@@ -24,9 +24,9 @@ import {IOas30NodeVisitor, IOasNodeVisitor} from "../../visitors/visitor.iface";
 export class Oas30ServerVariable extends OasExtensibleNode {
 
     public _name: string;
-    public enum: string[];
+    public enum?: string[];
     public default: string;
-    public description: string;
+    public description?: string;
 
     constructor(name: string) {
         super();

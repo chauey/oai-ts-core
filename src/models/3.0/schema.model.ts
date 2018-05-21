@@ -46,15 +46,15 @@ import {Oas30Discriminator} from "./discriminator.model";
  */
 export class Oas30Schema extends OasSchema {
 
-    public oneOf: OasSchema[];
-    public anyOf: OasSchema[];
-    public not: OasSchema;
+    public oneOf?: OasSchema[];
+    public anyOf?: OasSchema[];
+    public not?: OasSchema;
 
-    public discriminator: Oas30Discriminator;
+    public discriminator?: Oas30Discriminator;
 
-    public nullable: boolean;
-    public writeOnly: boolean;
-    public deprecated: boolean;
+    public nullable?: boolean;
+    public writeOnly?: boolean;
+    public deprecated?: boolean;
 
     /**
      * Creates a child Discriminator model.

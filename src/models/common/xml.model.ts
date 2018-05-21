@@ -23,11 +23,11 @@ import {OasExtensibleNode} from "../enode.model";
  */
 export class OasXML extends OasExtensibleNode {
 
-    public name: string;
-    public namespace: string;
-    public prefix: string;
-    public attribute: boolean;
-    public wrapped: boolean;
+    public name?: string;
+    public namespace?: string;
+    public prefix?: string;
+    public attribute?: boolean;
+    public wrapped?: boolean;
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

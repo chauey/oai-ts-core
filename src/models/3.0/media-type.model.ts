@@ -62,10 +62,10 @@ export class Oas30MediaType extends OasExtensibleNode {
 
     private _name: string;
 
-    public schema: Oas30Schema;
-    public example: any;
-    public examples: Oas30ExampleItems;
-    public encoding: Oas30EncodingItems = new Oas30EncodingItems();
+    public schema?: Oas30Schema;
+    public example?: any;
+    public examples?: Oas30ExampleItems;
+    public encoding?: Oas30EncodingItems = new Oas30EncodingItems();
 
     /**
      * Constructor.

@@ -28,10 +28,10 @@ import {
  */
 export class Oas30OAuthFlows extends OasExtensibleNode {
 
-    public implicit: Oas30ImplicitOAuthFlow;
-    public password: Oas30PasswordOAuthFlow;
-    public clientCredentials: Oas30ClientCredentialsOAuthFlow;
-    public authorizationCode: Oas30AuthorizationCodeOAuthFlow;
+    public implicit?: Oas30ImplicitOAuthFlow;
+    public password?: Oas30PasswordOAuthFlow;
+    public clientCredentials?: Oas30ClientCredentialsOAuthFlow;
+    public authorizationCode?: Oas30AuthorizationCodeOAuthFlow;
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

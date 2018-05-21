@@ -121,15 +121,15 @@ import {Oas30CallbackDefinition} from "./callback.model";
  */
 export class Oas30Components extends OasExtensibleNode {
 
-    public schemas: Oas30SchemaComponents = new Oas30SchemaComponents();
-    public responses: Oas30ResponseComponents = new Oas30ResponseComponents();
-    public parameters: Oas30ParameterComponents = new Oas30ParameterComponents();
-    public examples: Oas30ExampleComponents = new Oas30ExampleComponents();
-    public requestBodies: Oas30RequestBodyComponents = new Oas30RequestBodyComponents();
-    public headers: Oas30HeaderComponents = new Oas30HeaderComponents();
-    public securitySchemes: Oas30SecuritySchemeComponents = new Oas30SecuritySchemeComponents();
-    public links: Oas30LinkComponents = new Oas30LinkComponents();
-    public callbacks: Oas30CallbackComponents = new Oas30CallbackComponents();
+    public schemas?: Oas30SchemaComponents = new Oas30SchemaComponents();
+    public responses?: Oas30ResponseComponents = new Oas30ResponseComponents();
+    public parameters?: Oas30ParameterComponents = new Oas30ParameterComponents();
+    public examples?: Oas30ExampleComponents = new Oas30ExampleComponents();
+    public requestBodies?: Oas30RequestBodyComponents = new Oas30RequestBodyComponents();
+    public headers?: Oas30HeaderComponents = new Oas30HeaderComponents();
+    public securitySchemes?: Oas30SecuritySchemeComponents = new Oas30SecuritySchemeComponents();
+    public links?: Oas30LinkComponents = new Oas30LinkComponents();
+    public callbacks?: Oas30CallbackComponents = new Oas30CallbackComponents();
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

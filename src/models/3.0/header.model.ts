@@ -36,16 +36,16 @@ import {Oas30MediaType} from "./media-type.model";
 export class Oas30Header extends OasHeader {
 
     public $ref: string;
-    public required: boolean;
-    public deprecated: boolean;
-    public allowEmptyValue: boolean;
-    public style: string;
-    public explode: boolean;
-    public allowReserved: boolean;
-    public schema: Oas30Schema;
-    public example: any;
-    public examples: Oas30ExampleItems;
-    public content: Oas30ParameterContent = new Oas30ParameterContent();
+    public required?: boolean;
+    public deprecated?: boolean;
+    public allowEmptyValue?: boolean;
+    public style?: string;
+    public explode?: boolean;
+    public allowReserved?: boolean;
+    public schema?: Oas30Schema;
+    public example?: any;
+    public examples?: Oas30ExampleItems;
+    public content?: Oas30ParameterContent = new Oas30ParameterContent();
 
     /**
      * Constructor.

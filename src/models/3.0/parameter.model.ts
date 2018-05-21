@@ -44,10 +44,10 @@ import {Oas30MediaType} from "./media-type.model";
 export abstract class Oas30ParameterBase extends OasParameterBase {
 
     public $ref: string;
-    public deprecated: boolean;
-    public style: string; // matrix, label, form, simple, spaceDelimited, pipeDelimited, deepObject
-    public explode: boolean;
-    public allowReserved: boolean;
+    public deprecated?: boolean;
+    public style?: string; // matrix, label, form, simple, spaceDelimited, pipeDelimited, deepObject
+    public explode?: boolean;
+    public allowReserved?: boolean;
     public example: any;
     public examples: Oas30ExampleItems;
     public content: Oas30ParameterContent = new Oas30ParameterContent();

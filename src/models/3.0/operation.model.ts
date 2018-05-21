@@ -92,9 +92,9 @@ import {Oas30Callback} from "./callback.model";
  */
 export class Oas30Operation extends OasOperation implements IOasParameterParent {
 
-    public requestBody: Oas30RequestBody;
-    public callbacks: Oas30Callbacks = new Oas30Callbacks();
-    public servers: Oas30Server[];
+    public requestBody?: Oas30RequestBody;
+    public callbacks?: Oas30Callbacks = new Oas30Callbacks();
+    public servers?: Oas30Server[];
 
     /**
      * Constructor.

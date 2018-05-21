@@ -23,9 +23,9 @@ import {OasExtensibleNode} from "../enode.model";
  */
 export class OasContact extends OasExtensibleNode {
 
-    public name: string;
-    public url: string;
-    public email: string;
+    public name?: string;
+    public url?: string;
+    public email?: string;
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

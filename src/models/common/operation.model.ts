@@ -30,15 +30,15 @@ import {IOasParameterParent, OasParameterBase} from "./parameter.model";
 export abstract class OasOperation extends OasExtensibleNode implements IOasParameterParent {
 
     private _method: string;
-    public tags: string[];
-    public summary: string;
-    public description: string;
-    public externalDocs: OasExternalDocumentation;
-    public operationId: string;
-    public parameters: OasParameterBase[];
+    public tags?: string[];
+    public summary?: string;
+    public description?: string;
+    public externalDocs?: OasExternalDocumentation;
+    public operationId?: string;
+    public parameters?: OasParameterBase[];
     public responses: OasResponses;
-    public deprecated: boolean;
-    public security: OasSecurityRequirement[];
+    public deprecated?: boolean;
+    public security?: OasSecurityRequirement[];
 
     /**
      * Constructor.

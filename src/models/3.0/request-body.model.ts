@@ -71,9 +71,9 @@ import {Oas30MediaType} from "./media-type.model";
 export class Oas30RequestBody extends OasExtensibleNode implements IOasReferenceNode {
 
     public $ref: string;
-    public description: string;
+    public description?: string;
     public content: Oas30RequestBodyContent = new Oas30RequestBodyContent();
-    public required: boolean;
+    public required?: boolean;
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

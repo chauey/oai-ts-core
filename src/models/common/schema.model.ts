@@ -27,36 +27,36 @@ import {OasXML} from "./xml.model";
 export abstract class OasSchema extends OasExtensibleNode {
 
     public $ref: string;
-    public format: string;
-    public title: string;
+    public format?: string;
+    public title?: string;
     public description: string;
-    public default: any;
-    public multipleOf: number;
-    public maximum: number;
+    public default?: any;
+    public multipleOf?: number;
+    public maximum?: number;
     public exclusiveMaximum: boolean;
-    public minimum: number;
+    public minimum?: number;
     public exclusiveMinimum: boolean;
     public maxLength: number;
     public minLength: number;
-    public pattern: string;
-    public maxItems: number;
-    public minItems: number;
-    public uniqueItems: boolean;
-    public maxProperties: number;
-    public minProperties: number;
-    public required: string[];
-    public enum: any[];
-    public type: string;
+    public pattern?: string;
+    public maxItems?: number;
+    public minItems?: number;
+    public uniqueItems?: boolean;
+    public maxProperties?: number;
+    public minProperties?: number;
+    public required?: string[];
+    public enum?: any[];
+    public type?: string | 'array' | 'boolean' | 'integer' | 'number' | 'object' | 'string';
 
     public items: (OasSchema | OasSchema[]);
-    public allOf: OasSchema[];
-    public properties: OasSchemaProperties;
-    public additionalProperties: (boolean | OasSchema);
+    public allOf?: OasSchema[];
+    public properties?: OasSchemaProperties;
+    public additionalProperties?: (boolean | OasSchema);
 
-    public readOnly: boolean;
-    public xml: OasXML;
-    public externalDocs: OasExternalDocumentation;
-    public example: any;
+    public readOnly?: boolean;
+    public xml?: OasXML;
+    public externalDocs?: OasExternalDocumentation;
+    public example?: any;
 
     /**
      * Accepts the given OAS node visitor and calls the appropriate method on it to visit this node.

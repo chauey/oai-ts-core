@@ -39,9 +39,9 @@ import {Oas30Link} from "./link.model";
 export abstract class Oas30ResponseBase extends OasResponse {
 
     public $ref: string;
-    public headers: Oas30ResponseHeaders = new Oas30ResponseHeaders();
-    public content: Oas30ResponseContent = new Oas30ResponseContent();
-    public links: Oas30Links = new Oas30Links();
+    public headers?: Oas30ResponseHeaders = new Oas30ResponseHeaders();
+    public content?: Oas30ResponseContent = new Oas30ResponseContent();
+    public links?: Oas30Links = new Oas30Links();
 
     /**
      * Creates a header.

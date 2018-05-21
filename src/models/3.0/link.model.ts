@@ -29,12 +29,12 @@ export class Oas30Link extends OasExtensibleNode {
     private _name: string;
 
     public $ref: string;
-    public operationRef: string;
-    public operationId: string;
-    public parameters: Oas30LinkParameters = new Oas30LinkParameters();
-    public requestBody: Oas30LinkRequestBodyExpression;
-    public description: string;
-    public server: Oas30LinkServer;
+    public operationRef?: string;
+    public operationId?: string;
+    public parameters?: Oas30LinkParameters = new Oas30LinkParameters();
+    public requestBody?: Oas30LinkRequestBodyExpression;
+    public description?: string;
+    public server?: Oas30LinkServer;
 
     /**
      * Constructor.

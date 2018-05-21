@@ -25,7 +25,7 @@ import {OasSchema} from "./schema.model";
  */
 export interface IOasParameterParent {
 
-    parameters: OasParameterBase[];
+    parameters?: OasParameterBase[];
 
     addParameter(parameter: OasParameterBase): OasParameterBase;
     createParameter(): OasParameterBase;
@@ -41,11 +41,11 @@ export interface IOasParameterParent {
 export abstract class OasParameterBase extends OasExtensibleNode {
 
     public name: string;
-    public in: string;
-    public description: string;
-    public required: boolean;
+    public in: string | 'query' | 'header' | 'cookie' | 'path'; 
+    public description?: string;
+    public required?: boolean;
     public schema: OasSchema;
-    public allowEmptyValue: boolean;
+    public allowEmptyValue?: boolean;
 
     /**
      * Creates a child schema model.

@@ -72,10 +72,10 @@ import {IOas30NodeVisitor, IOasNodeVisitor} from "../../visitors/visitor.iface";
  */
 export class Oas30PathItem extends OasPathItem {
 
-    public summary: string;
-    public description: string;
-    public trace: Oas30Operation;
-    public servers: Oas30Server[];
+    public summary?: string;
+    public description?: string;
+    public trace?: Oas30Operation;
+    public servers?: Oas30Server[];
 
     /**
      * Constructor.

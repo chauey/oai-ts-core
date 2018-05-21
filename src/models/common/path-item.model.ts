@@ -26,15 +26,15 @@ import {IOasParameterParent, OasParameterBase} from "./parameter.model";
 export abstract class OasPathItem extends OasExtensibleNode implements IOasParameterParent {
 
     private _path: string;
-    public $ref: string;
-    public get: OasOperation;
-    public put: OasOperation;
-    public post: OasOperation;
-    public delete: OasOperation;
-    public options: OasOperation;
-    public head: OasOperation;
-    public patch: OasOperation;
-    public parameters: OasParameterBase[];
+    public $ref?: string;
+    public get?: OasOperation;
+    public put?: OasOperation;
+    public post?: OasOperation;
+    public delete?: OasOperation;
+    public options?: OasOperation;
+    public head?: OasOperation;
+    public patch?: OasOperation;
+    public parameters?: OasParameterBase[];
 
     /**
      * Constructor.
